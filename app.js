@@ -387,7 +387,8 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 
   const HEALTH_PING_MS = 3 * 60 * 1000;
-  const healthUrl = `http://localhost:${PORT}/health`;
+  // const healthUrl = `http://localhost:${PORT}/health`;
+  const healthUrl = `https://yt-backend-b4tl.onrender.com/health`;
 
   setInterval(async () => {
     try {
